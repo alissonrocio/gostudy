@@ -21,6 +21,10 @@ const
 ( 
 	sou_um_contante_float float64 = 3.14
 	sou_um_constante_string = "https://url_do_meu_servico.com"
+	sou_um_iota_1 = iota // integer
+	sou_um_iota_2 
+	sou_um_iota_3
+	sou_um_iota_4
 )
 
 func main(){
@@ -36,6 +40,7 @@ func main(){
 	Formatar(sou_um_slice_string)
 	Formatar(sou_um_rune)
 	Formatar(sou_um_constante_string)
+	Formatar(sou_um_iota_1)
 
 	//Inicialização das variáveis já declaradas
 	sou_um_string = "Um texto qualqer"
@@ -68,6 +73,7 @@ func main(){
 	Formatar(sou_outro_bool)
 	Formatar(sou_outro_slice_string)
 	Formatar(sou_outro_rune)
+
 }
 
 func Formatar(tipo interface{}){
