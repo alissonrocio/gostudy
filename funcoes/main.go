@@ -22,7 +22,7 @@ func main(){
 	}()
 
 	p:= pessoa{"Alisson","Rodrigues"}
-	p.mostrar_info()
+	p.metodo_mostrar_info()
 
 	variavel_funcao:= func () int {
 		fmt.Println("Sou uma função dentro da variável")
@@ -78,7 +78,7 @@ func funcao_varios_parametros(inteiros ...int) int {
 	return soma
 }
 
-func (p pessoa) mostrar_info() string {
+func (p pessoa) metodo_mostrar_info() string {
 	fmt.Println(p.nome + " " + p.sobrenome)
 	return p.nome + " " + p.sobrenome
 }
